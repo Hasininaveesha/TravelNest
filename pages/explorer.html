@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+
+    <link rel="stylesheet" href ="../css/Explorer.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">TravelNest</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="Budget.html">Budget Planner</a>
+    <a href="Random.html">Trip Generator</a>
+    <a href="mood.html">Travel Mood</a>
+    <a href="Feedback.html">Feedback</a>
+
+  </nav> 
+</header>
+
+    <h1>Travel Destinations</h1>
+
+    <div class="controls">
+
+        <input type="text" id="searchInput" placeholder="Search destination">
+
+        <select id="continentFilter">
+
+            <option value="all">All Continents</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Africa">Africa</option>
+
+        </select>
+
+    </div>
+
+    <div class="card-container" id="cardContainer"></div>
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h3>Popular Attractions</h3>
+            <ul id="attractions"></ul>
+            <h3>Travel Cost Comparison</h3>
+
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Cost</th>
+                </tr>
+
+                <tr>
+                    <td>Hotel</td>
+                    <td id="hotelCost"></td>
+                </tr>
+
+                <tr>
+                    <td>Food</td>
+                    <td id="foodCost"></td>
+                </tr>
+
+                <tr>
+                    <td>Transport</td>
+                    <td id="transportCost"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/Explorer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Budget Planner</title>
+    <link rel="stylesheet" href ="../css/Budget.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">TravelNest</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="Budget.html">Budget Planner</a>
+    <a href="Random.html">Trip Generator</a>
+    <a href="mood.html">Travel Mood</a>
+    <a href="Feedback.html">Feedback</a>
+
+  </nav> 
+</header>
+
+    <h1>Trip Budget Planner</h1>
+
+    <div class="container">
+
+    <label>Destination</label>
+    <input type="text" id="destination">
+
+    <label>Number of Days</label>
+    <input type="number" id="days">
+
+    <label>Daily Budget ($)</label>
+    <input type="number" id="budget">
+
+    <button onclick="calculateBudget()">Calculate</button>
+
+    <div class="result">
+        <h2 id="totalCost"></h2>
+        <h3 id="budgetStatus"></h3>
+
+        <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+        </div>
+    </div>
+
+    <button onclick="saveTrip()">Save Trip</button>
+
+    </div>
+
+    <script src="../js/Budget.js"></script>
+    
+</body>
+</html>

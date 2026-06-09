@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Trip Generator</title>
+    <link rel="stylesheet" href= "../css/Random.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">TravelNest</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="Budget.html">Budget Planner</a>
+    <a href="Random.html">Trip Generator</a>
+    <a href="mood.html">Travel Mood</a>
+    <a href="Feedback.html">Feedback</a>
+
+  </nav> 
+</header>
+
+    <h1>Random Trip Generator</h1>
+
+    <div class="container">
+
+    <label>Travel Type</label>
+    <select id="travelType">
+        <option value="Adventure">Adventure</option>
+        <option value="Relaxation">Relaxation</option>
+        <option value="Cultural">Cultural</option>
+        <option value="Nature">Nature</option>
+    </select>
+
+    <label>Budget Range</label>
+    <select id="budgetRange">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button onclick="generateTrip()">
+        Generate Trip
+    </button>
+
+    <button onclick="generateTrip()" class="again">
+        Surprise Me Again
+    </button>
+
+    <div class="result" id="result">
+        <h2 id="destinationName"></h2>
+        <img id="destinationImage" src="" alt="">
+        <p id="destinationInfo"></p>
+    </div>
+
+    <button onclick="saveWishlist()">
+        Save to Wishlist
+    </button>
+
+    </div>
+
+    <script src="../js/Random.js"></script>
+</body>
+</html>
