@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Mood Page</title>
+    <link rel="stylesheet" href= "../css/mood.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">TravelNest</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="Budget.html">Budget Planner</a>
+    <a href="Random.html">Trip Generator</a>
+    <a href="mood.html">Travel Mood</a>
+    <a href="Feedback.html">Feedback</a>
+
+  </nav> 
+</header>
+
+    <h1>Travel Mood Page</h1>
+
+    <div class="container">
+
+    <h2>Ambient Travel Sounds</h2>
+
+    <div class="buttons">
+
+        <button onclick="playBeach()">
+        Beach Sound
+        </button>
+
+        <button onclick="playForest()">
+        Forest Sound
+        </button>
+
+        <button onclick="playCity()">
+        City Sound
+        </button>
+
+        <button onclick="stopSound()">
+        Stop Sound
+        </button>
+
+    </div>
+
+    <h2>Travel Tracker</h2>
+
+    <select id="destination">
+        <option value="Paris">Paris</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Bali">Bali</option>
+        <option value="Dubai">Dubai</option>
+    </select>
+
+    <div class="buttons">
+
+        <button onclick="markVisited()">
+        Mark as Visited
+        </button>
+
+        <button onclick="markPlanned()">
+        Mark as Planned
+        </button>
+
+    </div>
+
+    <div class="lists">
+
+        <div>
+        <h3>Visited Destinations</h3>
+        <ul id="visitedList"></ul>
+        </div>
+
+        <div>
+        <h3>Planned Destinations</h3>
+        <ul id="plannedList"></ul>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="../js/mood.js"></script>   
+</body>
+</html>

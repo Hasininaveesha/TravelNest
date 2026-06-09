@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>TravelNest</title>
+    <link rel ="stylesheet" href = "../css/Home.css">
+</head>
+<body>
+    
+<!--navbar-->
+<header>
+  <div class="logo">TravelNest</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="explorer.html">Explorer</a>
+    <a href="Budget.html">Budget Planner</a>
+    <a href="Random.html">Trip Generator</a>
+    <a href="mood.html">Travel Mood</a>
+    <a href="Feedback.html">Feedback</a>
+
+  </nav> 
+   <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <h1 id="quote">Loading...</h1>
+    <p>Discover amazing places around the world</p>
+  </div>
+
+  <div class="hero-image">
+    <img id="heroImg" src= ../assets/Home/image.jpeg >
+  </div>
+</section>
+
+<!-- Destination-->
+<section class="daily">
+  <div class = "daily-text">
+    <h1> Enjoy the beauty </h1>
+    <h2>Destination of the Day</h2>
+    <p id="destination"></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+
+  <div class="newsletter">
+    <h3>Newsletter</h3>
+    <p> Subscribe to our Newsletter </p>
+    <h5> Get the latest travel updates and offers. </h5>
+    <input type="email" id="email" placeholder="Enter email">
+    <button onclick="saveEmail()">Subscribe</button>
+  </div>
+</footer>
+
+<script src="../js/Home.js"></script>
+</body>
+</html>
+</body>
+</html>
